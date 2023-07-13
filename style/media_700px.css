@@ -26,20 +26,39 @@
     font-size: 22px;
     cursor: pointer;
   }
+  nav img {
+    width: 80px;
+  }
+
+  .main-head h1 {
+    font-size: 2.5em;
+  }
+
+  .about-para {
+    width: 40px;
+  }
+  .about-para > h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .commented-container {
+    width: 80%;
+    margin: 30px 0px 0px 20px;
+    padding: 5px;
+  }
+  .course-box {
+    padding: 20px;
+    width: 260px;
+
+    margin: 60px 8px 8px 8px;
+  }
+
+  .course-box img {
+    width: 240px;
+  }
 
   .footer-container > div {
     max-width: 100%;
   }
-  .course-box {
-    padding: 40px;
-    width: 380px;
-    margin: 24px;
-    border-radius: 10px;
-    box-shadow: 1px 4px 10px rgb(222, 226, 228);
-  }
-  
-  .course-box img {
-    width: 360px;
-  }
-  
 }
