@@ -37,7 +37,7 @@ nav {
 }
 
 nav img {
-  width: 150px;
+  width: 120px;
 }
 
 .nav-links {
@@ -77,14 +77,13 @@ nav img {
 /* main heading in Home page starts here */
 .main-head {
   position: absolute;
-  top: 66%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+  top: 42%;
+  left: 6%;
 }
 
 .main-head h1 {
   font-family: "ShopifySans", Helvetica, Arial, sans-serif;
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 900;
   color: #e0caca;
 }
@@ -153,7 +152,7 @@ nav .fa {
   justify-content: space-around;
 }
 
-.about-us h2 {
+.about-para > h2 {
   margin-top: 40px;
   margin-bottom: 30px;
   font-size: 30px;
@@ -164,15 +163,16 @@ nav .fa {
 
 .about-para {
   padding-bottom: 20px;
-  text-align: justify;
-  text-justify: inter-word;
   font-size: small;
-  min-width: 380px;
+  min-width: 300px;
   max-width: 560px;
   width: 38%;
   line-height: 24px;
 }
-
+.about-para > p{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .about-us-img {
   min-width: 500px;
   max-width: 560px;
@@ -231,9 +231,8 @@ nav .fa {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2em;
   color: #19414f;
-  position: absolute;
-  top: 113em;
-  left: 40em;
+  text-align: end;
+  padding: 20px;
 }
 
 /* -- Courses -- */
