@@ -23,7 +23,7 @@ function closeForm() {
 function sendEmail() {
     Email.send({
         SecureToken: "2dddff2a-75d7-4896-9984-3a4770ff0c06",
-        To: "ajmalullanam5@gmail.com",
+        To: "dcodeplus.languages@gmail.com",
         From: "testwithajas@gmail.com",
         Subject: "Dcodeplus Site Enquiry",
         Body: "This is the enquiry from " 
