@@ -23,7 +23,7 @@ function closeForm() {
 function sendEmail() {
   Email.send({
     SecureToken: "2dddff2a-75d7-4896-9984-3a4770ff0c06",
-    To: "sajidmuhammed717@gmail.com",
+    To: "dcodeplus.languages@gmail.com",
     From: "testwithajas@gmail.com",
     Subject: "Dcodeplus Site Enquiry",
     Body:
@@ -88,6 +88,3 @@ function readMore(btn){
 }
 
 
-// Host: "smtp.elasticemail.com",
-//     Username: "testwithajas@gmail.com",
-//     Password: "8908BC10D321E49A78D795690267CCD30451",
