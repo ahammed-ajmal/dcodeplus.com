@@ -3,11 +3,11 @@
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   scroll-behavior: smooth;
-  transition: 1s;
+  transition: .5s;
 }
 
 *::selection {
-  color: #000;
+  color: #3e09ff;
 }
 
 html,
@@ -15,7 +15,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-a{
+a {
   text-decoration: none;
 }
 /* -- banner -- */
@@ -32,14 +32,16 @@ a{
 /* ******************** */
 /* nav starts from here */
 nav {
+  background-color: #ffffff;
+  padding: 0 4%;
   display: flex;
-  padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  box-shadow: #0a0a0b 0px 5px 9px 0px;
 }
 
 nav img {
-  width: 120px;
+  width: 80px;
 }
 
 .nav-links {
@@ -53,11 +55,18 @@ nav img {
   padding: 8px 12px;
   position: relative;
 }
+.nav-links .fa-home::before,
+.nav-links .fa-graduation-cap::before,
+.nav-links .fa-file-powerpoint-o::before,
+.nav-links .fa-info-circle::before,
+.nav-links .fa-phone-square::before {
+  content: none;
+}
 
-.nav-links ul li a {
-  color: #fff;
+.nav-links > ul > li > a {
+  color: #574f4f;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .nav-links ul li::after {
@@ -73,7 +82,10 @@ nav img {
 .nav-links ul li:hover::after {
   width: 100%;
 }
-
+nav > .fa,
+nav > div > .fa {
+  display: none;
+}
 /* nav ends here */
 
 /* main heading in Home page starts here */
@@ -117,10 +129,6 @@ nav img {
   transition: 1s;
 }
 
-nav .fa {
-  display: none;
-}
-
 /* -- sub head -- */
 
 .sub-head {
@@ -148,7 +156,6 @@ nav .fa {
 
 .about-us-content {
   padding: 40px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -192,9 +199,9 @@ nav .fa {
 }
 
 .philosophy-box {
-  flex-basis: 100px;
+  flex-basis: 160px;
   text-align: center;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .philosophy-box p {
@@ -205,8 +212,8 @@ nav .fa {
 }
 
 .philosophy-box img {
-  width: 10em;
-  height: 10em;
+  width: 6em;
+  height: 6em;
 }
 
 /* reviewed and commented */
@@ -256,7 +263,6 @@ nav .fa {
   transition: 1s;
 }
 
-
 .course-box img {
   width: 240px;
 }
@@ -270,15 +276,14 @@ nav .fa {
   text-justify: inter-word;
 }
 
-
-.course-box  > button {
+.course-box > button {
   padding: 4px;
   border: none;
 }
 
 /* read more button */
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -373,11 +378,10 @@ nav .fa {
 .footer-container {
   width: 100%;
   height: 100%;
-  background-color: #253439;
-  
+  background-color: #101925;
   font-size: small;
   line-height: 1.2em;
-  color: #7c7b7c;
+  color: #b1adb1;
   padding: 4em;
   display: flex;
   justify-content: space-between;
@@ -401,7 +405,7 @@ nav .fa {
 }
 
 .footer-container > div li {
-  color: #7c7b7c;
+  color: #b1adb1;
   cursor: pointer;
   width: 100%;
   list-style: none;

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decode Plus | Language school</title>
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/header-animation.css">
     <link rel="stylesheet" href="style/media_700px.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,12 +14,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
   </head>
 
   <body>
     <!-- -- Banner and Nav -- -->
-    <section class="header" id="home">
+    <section class="header">
       <nav>
         <a href="index.html"
           ><img src="img/Logo/Logo_dcodeplus.png" alt="Decode Plus Logo"
@@ -28,11 +26,21 @@
         <div class="nav-links" id="nav-links">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="#courses">COURSES</a></li>
-            <li><a href="">PHILOSOPHY</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li>
+              <a href=""><i class="fa fa-home"> HOME</i> </a>
+            </li>
+            <li>
+              <a href="#courses"><i class="fa fa-graduation-cap"> COURSES</i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-file-powerpoint-o"> PHILOSOPHY</i></a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa fa-info-circle"> ABOUT</i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-phone-square"> CONTACT</i></a>
+            </li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -45,13 +53,9 @@
         </h1>
         <a href="" class="main-about-btn">about us</a>
       </div>
-          
-        </main>
-        
-      </div>
     </section>
     <!-- -- about us -- -->
-    <section id="about" class="about-us">
+    <section id="about-us" class="about-us">
       <div class="sub-head">
         <h4>ABOUT OUR COMPANY</h4>
       </div>
@@ -84,20 +88,20 @@
       </div>
     </section>
     <!-- -- Philosophy -- -->
-    <section id="philosophy">
+    <section>
       <div class="sub-head">
         <h4>PHILOSOPHIES</h4>
       </div>
       <div class="philosophy-container">
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/01Optimism.png" alt="" />
           <h4>Optimism</h4>
           <p>
             Our mindset and attitude determine success in language learning.
           </p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/02Synergy.png" alt="" />
           <h4>Synergy</h4>
           <p>
             Total Physical Response (TPR) and Nuro Linguistic Program (NLP) can
@@ -105,17 +109,17 @@
           </p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/03Auditory.png" alt="" />
           <h4>Auditory</h4>
           <p>Learn with your ears and not with your eyes.</p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/04Phrasal.png" alt="" />
           <h4>Phrasal</h4>
           <p>Learn phrases not words.</p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/05Consistency.png" alt="" />
           <h4>Consistency</h4>
           <p>Practice and repetition are the key to spoken mastery.</p>
         </div>
@@ -149,23 +153,22 @@
             the language. This course is specifically designed to cater to
             beginners who have little or no prior experience in English. The
             course offers comprehensive training in basic reading, writing,
-            practical exercises, students will listening and speaking skills in
-            English. Through a combination of interactive classroom sessions and
-            learn how to read simple texts, write basic sentences, understand
-            spoken English and communicate effectively in day-to-day situations.
-            The course curriculum has been carefully crafted by experienced
-            faculty members at Dcode+ to ensure that students progress at a
-            comfortable pace and gain confidence in their ability to use the
-            language. Personal attention is given to each student to ensure that
-            they are able to grasp the concepts taught in class. At Dcode+, we
-            believe that learning a new language should be an affordable and
-            accessible experience for everyone. Our preparatory level Zelta
-            course is reasonably priced to ensure that students from all walks
-            of life can avail of high-quality English language training. Join
-            Dcode+ today and take the first step towards improving your English
-            language skills!
+            listening and speaking skills in English. Through a combination of
+            interactive classroom sessions and practical exercises, students
+            will learn how to read simple texts, write basic sentences,
+            understand spoken English and communicate effectively in day-to-day
+            situations. The course curriculum has been carefully crafted by
+            experienced faculty members at Dcode+ to ensure that students
+            progress at a comfortable pace and gain confidence in their ability
+            to use the language. Personal attention is given to each student to
+            ensure that they are able to grasp the concepts taught in class. At
+            Dcode+, we believe that learning a new language should be an
+            affordable and accessible experience for everyone. Our preparatory
+            level Zelta course is reasonably priced to ensure that students from
+            all walks of life can avail of high-quality English language
+            training. Join Dcode+ today and take the first step towards
+            improving your English language skills!
           </p>
-
           <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
@@ -194,7 +197,6 @@
             English language skills to the next level and succeed in their
             personal and professional lives.
           </p>
-
           <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
@@ -221,7 +223,6 @@
             in the English language. Enroll in Dcode+ Apex today and take the
             next step in your English language journey!
           </p>
-
           <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
@@ -242,7 +243,6 @@
             ensures students are well-prepared to achieve their desired scores
             and succeed in English-speaking environments.
           </p>
-
           <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
@@ -264,7 +264,6 @@
             confidence needed to pursue successful careers as professional
             translators in the Gulf or multinational companies.
           </p>
-
           <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
@@ -286,13 +285,12 @@
             personally and professionally, by honing their abilities and
             fostering personal growth.
           </p>
-
           <button onclick="readMore(this)">Read More</button>
         </div>
       </div>
     </section>
     <!-- -- contact -- -->
-    <section id="contact" class="contact-section">
+    <section id="contatct" class="contact-section">
       <button class="btn-form-popup" onclick="openForm()">
         <i class="fa fa-external-link-square"></i> Send Enquiry
       </button>
@@ -325,27 +323,14 @@
         </form>
       </div>
     </section>
-    <!-- <section>
-      
-        <iframe
-          src=" https://drive.google.com/file/d/10Bvled3ui9oYIFKkHsmC8Vsp7xaDLPpw/preview"
-          type="application/pdf"
-          style="width: 100vw; height: 90vh"
-        >
-          <p>not support <a href="">ddd</a></p></iframe
-        >
-    </section> -->
-    <!-- back to top button -->
-    <section>
-      <button onclick="goToTop()" id="go2top" title="Go to top">Top</button>
-    </section>
+
     <section id="footer">
       <div class="footer-container">
         <div>
           <img src="img/Logo/Logo_dcodeplus.png" alt="" />
           <h5>DecodePlus</h5>
           <p>
-            we understand the importance of mastering the English language in
+            We understand the importance of mastering the English language in
             today's globalized world. Whether you are looking to improve your
             communication skills for personal or professional reasons, our
             experienced trainers are here to help you achieve your goals.
@@ -355,11 +340,11 @@
         <div>
           <h5>Menu</h5>
           <ul>
-            <a href="#home"><li>Home</li></a>
-            <a href="#courses"><li>Courses</li></a>
-            <a href="#philosophy"><li>Philosophy</li></a>
-            <a onclick="openForm()"><li>Contact</li></a>
-            <a href="#about"><li>About</li></a>
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Philosophy</li>
+            <li>Contact</li>
+            <li>About</li>
           </ul>
         </div>
         <div>
@@ -390,8 +375,6 @@
 
     <!-- ----- JS Links ----- -->
     <script src="js/script.js"></script>
-    <script src="js/animated.headline.js"></script>
-
     <!-- smtp js link for email form data from website -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
