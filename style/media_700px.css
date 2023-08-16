@@ -4,6 +4,7 @@
   }
   .nav-links ul li {
     display: block;
+    
   }
   .nav-links {
     position: absolute;
@@ -17,13 +18,12 @@
     transition: 1s;
   }
   .nav-links ul {
-    padding: 30px;
+    padding: 26px 12px;
   }
   nav .fa {
     display: block;
     color: #fff;
     margin: 10px;
-    font-size: 22px;
     cursor: pointer;
   }
   nav img {
