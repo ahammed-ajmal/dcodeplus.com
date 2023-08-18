@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decode Plus | Language school</title>
+    <link rel="icon" type="image/x-icon" href="img/Logo/Logo_dcodeplus.png">
+
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/media_700px.css">
+    <link rel="stylesheet" href="style/media_700px.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Font Awesome 4 link -->
@@ -18,7 +20,7 @@
 
   <body>
     <!-- -- Banner and Nav -- -->
-    <section class="header">
+    <section class="head-nav">
       <nav>
         <a href="index.html"
           ><img src="img/Logo/Logo_dcodeplus.png" alt="Decode Plus Logo"
@@ -26,22 +28,40 @@
         <div class="nav-links" id="nav-links">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="#courses">COURSES</a></li>
-            <li><a href="">PHILOSOPHY</a></li>
-            <li><a href="#about-us">ABOUT</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li>
+              <a href=""><i class="fa fa-home"> HOME</i> </a>
+            </li>
+            <li>
+              <a href="#courses"
+                ><i class="fa fa-graduation-cap"> COURSES</i></a
+              >
+            </li>
+            <li>
+              <a href="#philosophy"><i class="fa fa-file-powerpoint-o"> PHILOSOPHY</i></a>
+            </li>
+            <li>
+              <a href="#about-us"><i class="fa fa-info-circle"> ABOUT</i></a>
+            </li>
+            <li>
+              <a href="" onclick="openForm()"><i class="fa fa-phone-square"> CONTACT</i></a>
+            </li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
+    </section>
+
+    <section class="main-head-section">
       <div class="main-head">
         <h3>Language School</h3>
         <h1>
-          YOUR LANGUAGE <br />
+          YOUR <span>LANGUAGE </span><br />
           HELPER
         </h1>
         <a href="" class="main-about-btn">about us</a>
+      </div>
+      <div class="main-head-img">
+        <img src="Banner_IMG/banner-img.gif" alt="">
       </div>
     </section>
     <!-- -- about us -- -->
@@ -78,20 +98,20 @@
       </div>
     </section>
     <!-- -- Philosophy -- -->
-    <section>
+    <section id="philosophy">
       <div class="sub-head">
         <h4>PHILOSOPHIES</h4>
       </div>
       <div class="philosophy-container">
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/01Optimism.png" alt="" />
           <h4>Optimism</h4>
           <p>
             Our mindset and attitude determine success in language learning.
           </p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/02Synergy.png" alt="" />
           <h4>Synergy</h4>
           <p>
             Total Physical Response (TPR) and Nuro Linguistic Program (NLP) can
@@ -99,22 +119,23 @@
           </p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/03Auditory.png" alt="" />
           <h4>Auditory</h4>
           <p>Learn with your ears and not with your eyes.</p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/04Phrasal.png" alt="" />
           <h4>Phrasal</h4>
           <p>Learn phrases not words.</p>
         </div>
         <div class="philosophy-box">
-          <img src="img/Philosophy/our-values-digniti-icon.svg" alt="" />
+          <img src="img/Philosophy/05Consistency.png" alt="" />
           <h4>Consistency</h4>
           <p>Practice and repetition are the key to spoken mastery.</p>
         </div>
       </div>
     </section>
+
     <!-- -- review and comments -- -->
     <section id="reviewed-and-commented">
       <div class="commented-container">
@@ -128,6 +149,7 @@
         <p>- Dr. Faiz from Yemen</p>
       </div>
     </section>
+
     <!-- -- Courses -- -->
     <section id="courses">
       <div class="sub-head">
@@ -137,7 +159,7 @@
         <div class="course-box">
           <img src="img/courses/dig.png" alt="" />
           <h4>Preparatory (Zelta)</h4>
-          <p>
+          <p class="content">
             The preparatory level Zelta at Dcode+ aims to provide a strong
             foundation in English language skills for students who are new to
             the language. This course is specifically designed to cater to
@@ -159,11 +181,12 @@
             training. Join Dcode+ today and take the first step towards
             improving your English language skills!
           </p>
+          <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
           <img src="img/courses/dig.png" alt="" />
           <h4>Intermediate (Felta)</h4>
-          <p>
+          <p class="content">
             Felta at Dcode+ is an intermediate-level course designed for
             individuals who have already acquired basic knowledge of English and
             are looking to advance their skills. This course is suitable for
@@ -186,11 +209,12 @@
             English language skills to the next level and succeed in their
             personal and professional lives.
           </p>
+          <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
           <img src="img/courses/dig.png" alt="" />
           <h4>Advanced (Apex)</h4>
-          <p>
+          <p class="content">
             Dcode+ Apex is designed for students who want to take their English
             proficiency to the next level. This course is ideal for those who
             have already mastered the basics of the English language and are
@@ -211,11 +235,12 @@
             in the English language. Enroll in Dcode+ Apex today and take the
             next step in your English language journey!
           </p>
+          <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
           <img src="img/courses/dig.png" alt="" />
           <h4>Decodeplus IELTS and TOEFL</h4>
-          <p>
+          <p class="content">
             Decodeplus School of Languages offers comprehensive programs for
             both the IELTS (International English Language Testing System) and
             TOEFL (Test of English as a Foreign Language) examinations. These
@@ -230,11 +255,12 @@
             ensures students are well-prepared to achieve their desired scores
             and succeed in English-speaking environments.
           </p>
+          <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
           <img src="img/courses/dig.png" alt="" />
           <h4>Dcodeplus Arabic English Translation</h4>
-          <p>
+          <p class="content">
             Dcodeplus Arabic English Translation course is a specialized program
             designed for individuals seeking certification and employment
             opportunities in Gulf or multinational companies. This comprehensive
@@ -250,11 +276,12 @@
             confidence needed to pursue successful careers as professional
             translators in the Gulf or multinational companies.
           </p>
+          <button onclick="readMore(this)">Read More</button>
         </div>
         <div class="course-box">
           <img src="img/courses/dig.png" alt="" />
           <h4>Dcodeplus Life Skill Coaching</h4>
-          <p>
+          <p class="content">
             Dcodeplus Life Skill Coaching offers a transformative program
             designed to empower individuals with essential skills for personal
             and professional success. Through personalized coaching sessions,
@@ -270,9 +297,11 @@
             personally and professionally, by honing their abilities and
             fostering personal growth.
           </p>
+          <button onclick="readMore(this)">Read More</button>
         </div>
       </div>
     </section>
+
     <!-- -- contact -- -->
     <section id="contatct" class="contact-section">
       <button class="btn-form-popup" onclick="openForm()">
@@ -307,29 +336,31 @@
         </form>
       </div>
     </section>
-    <!-- <section>
-      
-        <iframe
-          src=" https://drive.google.com/file/d/10Bvled3ui9oYIFKkHsmC8Vsp7xaDLPpw/preview"
-          type="application/pdf"
-          style="width: 100vw; height: 90vh"
-        >
-          <p>not support <a href="">ddd</a></p></iframe
-        >
-    </section> -->
+
+    <!-- __________ Floating Whatsapp Icon & BAck to Top __________ -->
+    <section>
+      <div title="Whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=919048744477&text=Hi..!" target="_blank"><div id="chat2wa"><img src="img/Logo/icons8-whatsapp-144.png" alt=""></div></a>
+      </div>
+      <div title="Back to top">
+        <a href="#"><div id="go2top">Top</div></a>
+      </div>
+    </section>
+    
+    <!-- _____________ Footer _____________ -->
     <section id="footer">
       <div class="footer-container">
         <div>
           <img src="img/Logo/Logo_dcodeplus.png" alt="" />
           <h5>DecodePlus</h5>
           <p>
-            we understand the importance of mastering the English language in
+            We understand the importance of mastering the English language in
             today's globalized world. Whether you are looking to improve your
             communication skills for personal or professional reasons, our
             experienced trainers are here to help you achieve your goals.
           </p>
         </div>
-        
+
         <div>
           <h5>Menu</h5>
           <ul>
@@ -344,29 +375,35 @@
           <h5>Address</h5>
 
           <p>
-            <i class="fa fa-map-marker"> </i> Kozhikode - Palakkad Hwy,
-            Pratheeksha colony, Angadippuram, Malappuram, Kerala 679321
+            <a href="https://maps.app.goo.gl/oDtJePvQ6VwQavDB7"><i class="fa fa-map-marker"> </i> Kozhikode - Palakkad Hwy,
+            Pratheeksha colony, Angadippuram, Malappuram, Kerala 679321</a>
           </p>
+          <br>
           <h5>Contact</h5>
           <p><i class="fa fa-phone"> </i> +91 9048 744 477, +91 9072 666 464</p>
           <p><i class="fa fa-envelope"> </i> dcodeplus.languages@gmail.com</p>
+          <br>
           <h5>social media</h5>
           <div class="social">
-            <a href="http://" target="_blank" rel="noopener noreferrer"
+            <a href="https://youtube.com/@DcodePlus_Languages" target="_blank" rel="noopener noreferrer"
               ><i class="fa fa-youtube"></i
             ></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/profile.php?id=100083863866272&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"
               ><i class="fa fa-facebook"></i
             ></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
+            <a href="https://instagram.com/dcodeplus_languages?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer"
               ><i class="fa fa-instagram"></i
             ></a>
           </div>
         </div>
       </div>
+      <div class="copy-right">
+        <p>© Copyright 2023 DecodePlus. All Rights Reserved.</p>
+      </div>
     </section>
 
     <!-- ----- JS Links ----- -->
+
     <script src="js/script.js"></script>
     <!-- smtp js link for email form data from website -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
