@@ -315,14 +315,15 @@
       <div id="contact-container" class="contact-container">
         <form onsubmit="sendEmail(); reset; return false;">
           <h4>Get in touch</h4>
-          <input type="text" name="" id="form-name" placeholder="Name" /><br />
+          <input type="text" name="" id="form-name" placeholder="Name" required /><br />
           <input
             type="email"
             name=""
             id="form-mail"
             placeholder="email"
+            required
           /><br />
-          <input type="tel" name="" id="form-mobile" placeholder="Mobile" />
+          <input type="tel" name="" id="form-mobile" placeholder="Mobile" required />
           <textarea
             name=""
             id="form-message"
