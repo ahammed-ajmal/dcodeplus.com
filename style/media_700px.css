@@ -2,12 +2,18 @@
   .main-head h1 {
     font-size: 25px;
   }
+
+  .main-head-img img {
+    width: 88%;
+  }
   .nav-links ul li {
     display: block;
+    
   }
   .nav-links {
     position: absolute;
-    background: #f44336;
+    background: #fffffff3;
+    box-shadow: #947c7c45 3px 0px 14px -1px;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -17,18 +23,27 @@
     transition: 1s;
   }
   .nav-links ul {
-    padding: 30px;
+    padding: 26px 12px;
   }
   nav .fa {
     display: block;
-    color: #fff;
+    color: #513f3f;
     margin: 10px;
-    font-size: 22px;
     cursor: pointer;
   }
+
+  nav > .fa, nav > div > .fa {
+  display: block;
+}
+
   nav img {
     width: 80px;
   }
+
+  nav .fa-bars{
+    color: #878787;
+    font-size: 20px;
+  } 
 
   .main-head h1 {
     font-size: 2.5em;
@@ -48,14 +63,14 @@
     padding: 5px;
   }
   .course-box {
-    padding: 20px;
+    
     width: 260px;
 
     margin: 60px 8px 8px 8px;
   }
 
   .course-box img {
-    width: 240px;
+    width: 260px;
   }
 
   .footer-container > div {
