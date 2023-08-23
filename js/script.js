@@ -23,8 +23,9 @@ function closeForm() {
 function sendEmail() {
   Email.send({
     SecureToken: "2dddff2a-75d7-4896-9984-3a4770ff0c06",
-    // To: "ajmalullanam5@gmail.com",
     To: "dcodeplus.languages@gmail.com",
+    // To: "ajmalullanam5@gmail.com",
+    // To: "mohamedanaspkm@gmail.com",
     From: "testwithajas@gmail.com",
     Subject: "Dcodeplus Site Enquiry",
     Body:
@@ -39,15 +40,13 @@ function sendEmail() {
       "<br> Mobile: " +
       document.getElementById("form-mobile").value,
   }).then((message) => {
-    if(message=='OK'){
-      swal("Successfull",  "Your message has been sent successfully", "Success"),
-      document.getElementById("contact-container").style.display = "none";
-    }
-    else{
-      swal("Something wrong", "Your data not received", "error")
+    if (message == "OK") {
+      swal("Successfull", "Your message has been sent successfully", "Success"),
+        (document.getElementById("contact-container").style.display = "none");
+    } else {
+      swal("Something wrong", "Your data not received", "error");
     }
   });
-  
 }
 
 // back to top button function
@@ -79,25 +78,22 @@ function goToTop() {
 
 let noOfCharac = 250;
 let contents = document.querySelectorAll(".content");
-contents.forEach(content => {
+contents.forEach((content) => {
   if (content.textContent.length < noOfCharac) {
     content.nextElementSibling.style.display = "none";
-
-  }
-  else {
+  } else {
     let displayText = content.textContent.slice(0, noOfCharac);
     let moreText = content.textContent.slice(noOfCharac);
     content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
   }
-
 });
 
-function readMore(btn){
+function readMore(btn) {
   let post = btn.parentElement;
   post.querySelector(".dots").classList.toggle("hide");
   post.querySelector(".more").classList.toggle("hide");
 
-  btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
+  btn.textContent == "Read More"
+    ? (btn.textContent = "Read Less")
+    : (btn.textContent = "Read More");
 }
-
-
