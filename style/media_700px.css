@@ -57,6 +57,10 @@
     text-align: center;
   }
 
+  .about-us-img img {
+    height: 50vh;
+}
+
   .commented-container {
     width: 80%;
     margin: 30px 0px 0px 20px;
@@ -76,4 +80,5 @@
   .footer-container > div {
     max-width: 100%;
   }
+
 }
