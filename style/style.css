@@ -7,7 +7,8 @@
 }
 
 *::selection {
-  color: #3e09ff;
+  background-color: #727272;
+  color: #fff;
 }
 
 html,
@@ -126,10 +127,10 @@ nav > div > .fa {
   color: #6f3e78;
 }
 .main-head h3 {
-  color: #e0caca;
+  color: #adacad;
   font-size: 20px;
   font-weight: 100;
-  text-shadow: 1px 1px 1px #0000005e;
+  text-shadow: 0px 0px 3px #0303033b;
 }
 
 .main-head p {
@@ -218,11 +219,29 @@ nav > div > .fa {
 }
 
 /* -- philosophy -- */
-.philosophy-container {
+
+.philosophy-ctn{
+  background-color: #f3f3f3;
+}
+
+.philosophy-quote{
+  color: #101925;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+
+.philosophy-quote p{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-family: "Montserrat", "Arial", sans-serif; */
+  /* font-family: cursive; */
+  font-size: 1.1em;
+}
+
+.philosophy-items-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #f3f3f3;
+  
   overflow: visible;
 }
 
@@ -261,7 +280,7 @@ nav > div > .fa {
   font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 1.5em;
   padding: 40px 40px 0 40px;
-  color: #909596;
+  color: #717576;
 }
 
 .commented-container p:nth-child(2) {
@@ -449,7 +468,7 @@ nav > div > .fa {
 #chat2wa {
   display: none;
   position: fixed;
-  bottom: 100px;
+  bottom: 90px;
   right: 30px;
   z-index: 99;
   border: none;
