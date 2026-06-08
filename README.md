@@ -122,7 +122,7 @@ Enquiry form for prospective students.
 
 ## Author
 
-Developed by Aji
+Developed by ahammed-ajmal
 
 ## License
 
